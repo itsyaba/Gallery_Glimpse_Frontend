@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Masonry from "react-masonry-css";
 import { Link } from "react-router-dom";
 
@@ -20,12 +20,6 @@ export const MasonryLayout: React.FC<MasonryLayoutProps> = ({ pins }) => {
     700: 3,
     500: 1,
   };
-
-  useEffect(() => {
-    console.log("New Pins" , pins);
-  }, [pins])
-  
-
 
   return pins?.length > 0 ? (
     <Masonry
