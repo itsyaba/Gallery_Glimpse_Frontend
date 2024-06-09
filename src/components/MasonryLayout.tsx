@@ -1,6 +1,7 @@
 import React from "react";
 import Masonry from "react-masonry-css";
 import { Link } from "react-router-dom";
+import { BASE_URL } from "@/lib/constants";
 
 interface PinItem {
   image: string;
@@ -31,8 +32,8 @@ export const MasonryLayout: React.FC<MasonryLayoutProps> = ({ pins }) => {
         <div key={item._id} className="relative overflow-hidden group shadow-2xl" id="pinContainer">
           <Link to={`/pin/${item._id}`}>
             <img
-              src={`http://localhost:3000/Images/${item.image}`}
-              alt={`Image ${item._id}`}
+              src={`${BASE_URL}/Images/${item.image}`}
+              alt={`Image ${item.title}`}
               className="group-hover:scale-110 transition-all duration-700 ease-in-out object-cover w-full h-full"
             />
             <h1 className="absolute dark:bg-slate-900 bg-slate-300 opacity-70 slide-out-to-bottom-10 left-0 right-0 font-quicksand py-2 pl-2 capitalize group-hover:transition-all group-hover:ease-in group-hover:bottom-0 ">
