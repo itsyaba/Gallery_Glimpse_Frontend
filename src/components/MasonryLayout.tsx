@@ -27,7 +27,7 @@ export const MasonryLayout: React.FC<MasonryLayoutProps> = ({ pins }) => {
   
 
 
-  return pins.length ? (
+  return pins?.length > 0 ? (
     <Masonry
       breakpointCols={breakpointCols}
       className="my-masonry-grid"

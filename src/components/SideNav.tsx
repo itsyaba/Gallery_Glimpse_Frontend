@@ -3,6 +3,7 @@ import { categories } from "@/lib/data";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { useAppSelector } from "@/app/hooks";
 import { AvatarWithFallback } from "./AvatarWithFallback";
+import { HomeIcon } from "lucide-react";
 
 export const SideNav = () => {
   const userInfo = useAppSelector((state) => state.auth.userInfo);
@@ -21,8 +22,8 @@ export const SideNav = () => {
               Gallery Glimpse
             </h1>
           </Link>
-
           <div className="w-full">
+            <Link to="/" className="flex items-center justify-start hover:dark:bg-slate-900 hover:bg-slate-100 p-2 rounded-md transition-all"> <HomeIcon className="w-4 h-4 mr-3" /> Home</Link>
             <h1 className="text-xl font-semibold capitalize font-poiret mb-4">categories</h1>
             <ul className="flex flex-col gap-3">
               {categories.map((category) => (

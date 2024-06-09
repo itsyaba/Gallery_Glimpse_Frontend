@@ -108,7 +108,7 @@ const deleteProfileHandler = async() => {
           <div className="">
             <div className="relative">
               <div className=" bg-slate-800 min-h-32 w-full rounded-md animation-pulse">
-                <img src="https://source.unsplash.com/random/1600x300" alt="" />
+                <img src="https://picsum.photos/1600/300" alt="" className="rounded-md" />
               </div>
               <div className="absolute top-full left-1/2  transform -translate-x-1/2 -translate-y-1/2">
                 <div className="scale-150 border-white border-4 rounded-full  flex items-center justify-center">
@@ -128,7 +128,10 @@ const deleteProfileHandler = async() => {
                 </div>
                 {isMyProfile && (
                   <div className="flex gap-4 mt-3 flex-col md:flex-row items-center justify-center">
-                    <Button variant="outline" onClick={() => navigate("/profile/" + userId + "/edit")}>
+                    <Button
+                      variant="outline"
+                      onClick={() => navigate("/profile/" + userId + "/edit")}
+                    >
                       <Pencil className="w-4 h-4 mr-3" />
                       Edit Profile
                     </Button>
@@ -169,7 +172,9 @@ const deleteProfileHandler = async() => {
                         </AlertDialogHeader>
                         <AlertDialogFooter>
                           <AlertDialogCancel>Cancel</AlertDialogCancel>
-                          <AlertDialogAction onClick={deleteProfileHandler}>Delete</AlertDialogAction>
+                          <AlertDialogAction onClick={deleteProfileHandler}>
+                            Delete
+                          </AlertDialogAction>
                         </AlertDialogFooter>
                       </AlertDialogContent>
                     </AlertDialog>
