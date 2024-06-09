@@ -1,30 +1,76 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Gallery Glimpse
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Welcome to Gallery Glimpse! A gallery website where users can upload images in either private or public mode. If an image is set to private, only the uploader can view it. Public images are visible to all users.
 
-## Expanding the ESLint configuration
+## Demo
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Homepage Dark
 
-- Configure the top-level `parserOptions` property like this:
+![Homepage](https://raw.githubusercontent.com/itsyaba/Gallery_Glimpse_Frontend/main/public/homepage-dark.png)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+2. Homepage Light
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+![Homepage-dark](https://raw.githubusercontent.com/itsyaba/Gallery_Glimpse_Frontend/main/public/homepage-light.png)
+
+3.Detail Page
+
+![Detail](https://raw.githubusercontent.com/itsyaba/Gallery_Glimpse_Frontend/main/public/image%20detail.png)
+
+4. Profile Page
+
+![profilepage](https://raw.githubusercontent.com/itsyaba/Gallery_Glimpse_Frontend/main/public/profilepage.png)
+
+5. Create New Pins
+
+![new](https://raw.githubusercontent.com/itsyaba/Gallery_Glimpse_Frontend/main/public/create%20new%20pins.png)
+
+
+## Table of Contents
+
+- [Features](#features)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Contact](#contact)
+
+## Features
+
+- **User Authentication**: Secure login and registration system.
+- **Image Upload**: Users can upload images and choose privacy settings (public or private).
+- **Gallery View**: Public images are viewable by all users; private images are restricted to the uploader.
+- **Responsive Design**: User-friendly interface across all devices.
+
+## Usage
+
+1. Navigate to the frontend URL provided by the development server (usually http://localhost:3000).
+
+2. Register a new user account or log in with existing credentials.
+3. Upload images through the user interface.
+4. Set the privacy of each image during upload.
+5. View public images in the gallery or access your private images in your profile.
+6. Set up environment variables: 
+Create a .env file in the root directory.
+Add necessary environment variables as per the example .env.example file.
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (git checkout -b feature/YourFeature).
+3. Commit your changes (git commit -m 'Add some feature').
+4. Push to the branch (git push origin feature/YourFeature).
+Open a pull request.
+
+## Contact
+For any questions or feedback, please contact the project maintainer at 
+[Telgram](https://t.me/itsyaba) .
+
+
+
+
+## Authors
+
+- [@itsyaba](https://github.com/itsyaba)
+
