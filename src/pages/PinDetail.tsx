@@ -57,9 +57,6 @@ export const PinDetail = () => {
 
   const [deleteImage] = useDeleteImageMutation();
 
-  // console.log(data.data.image.categories);
-  // console.log(categoryData.data.image);
-
   useEffect(() => {
     if (!isLoading) {
       if (data?.data?.image?.createdBy === userInfo.data.user._id) {
