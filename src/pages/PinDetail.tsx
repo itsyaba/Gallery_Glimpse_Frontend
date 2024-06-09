@@ -29,6 +29,7 @@ import { Pencil, Trash2 } from "lucide-react";
 
 import { MasonryLayout } from "@/components/MasonryLayout";
 import { toast } from "react-toastify";
+import { BASE_URL } from "@/lib/constants";
 
 export const PinDetail = () => {
   const userInfo = useAppSelector((state) => state.auth.userInfo);
@@ -55,9 +56,6 @@ export const PinDetail = () => {
   });
 
   const [deleteImage] = useDeleteImageMutation();
-
-  // console.log(data.data.image.categories);
-  // console.log(categoryData.data.image);
 
   useEffect(() => {
     if (!isLoading) {
@@ -101,7 +99,7 @@ export const PinDetail = () => {
           <div className="flex justify-center h-5/6 w-3/4 p-4 m-auto">
             <div className="w-auto h-full flex flex-col justify-start items-start">
               <img
-                src={`http://localhost:3000/Images/${data.data.image.image}`}
+                src={`${BASE_URL}/Images/${data.data.image.image}`}
                 alt={data.data.image.title}
                 className="w-80 object-scale-down rounded-2xl"
               />
